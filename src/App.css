@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+
+body {
+    min-height: 100dvh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(110deg, #0d1e2a 60%, #71e3fa);
+    color: #fff;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.slide{
+    animation: 10s slide infinite linear;
+}
+
+@keyframes slide {
+    from{transform: translateX(0);}
+    to{transform: translateX(-100%);}
+}
