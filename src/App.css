@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     min-height: 100dvh;
@@ -8,14 +8,23 @@ body {
     overflow: hidden;
     background: linear-gradient(110deg, #0d1e2a 60%, #71e3fa);
     color: #fff;
-    font-family: "Special Gothic Expanded One", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.slide{
-    animation: 10s slide infinite linear;
-}
+.slide{animation: 30s slide infinite linear;}
+.item1{animation-delay: calc(30s / 10 * (10 - 1) * -1);}
+.item2{animation-delay: calc(30s / 10 * (10 - 2) * -1);}
+.item3{animation-delay: calc(30s / 10 * (10 - 3) * -1);}
+.item4{animation-delay: calc(30s / 10 * (10 - 4) * -1);}
+.item5{animation-delay: calc(30s / 10 * (10 - 5) * -1);}
+.item6{animation-delay: calc(30s / 10 * (10 - 6) * -1);}
+.item7{animation-delay: calc(30s / 10 * (10 - 7) * -1);}
+.item8{animation-delay: calc(30s / 10 * (10 - 8) * -1);}
+.item9{animation-delay: calc(30s / 10 * (10 - 9) * -1);}
+.item10{animation-delay: calc(30s / 10 * (10 - 10) * -1);}
+
+.wrapper:hover .slide{animation-play-state: paused;}
 
 @keyframes slide {
-    from{transform: translateX(0);}
-    to{transform: translateX(-100%);}
+    to{left:-100%;}
 }
