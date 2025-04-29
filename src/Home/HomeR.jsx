@@ -54,7 +54,7 @@ const HomeR = () => {
         <>
             <div onClick={handleImgClick} onMouseEnter={handleimgHover} onMouseLeave={handleimgHover} className='w-[50%] z-20 relative flex justify-center items-center'>
                 {imgHover && <div className="botTalks max-w-[20%] font-semibold text-center absolute left-[15%] bg-[#fefeff] text-black p-2 rounded-t-2xl rounded-bl-2xl z-10">{imgClick == 0 ? "Hello, I'm Echo!! 🤖" : botMessage}</div>}
-                <Spline className='z-50 flex justify-center items-center' scene="https://prod.spline.design/8IMAkMiHzQqB3Htn/scene.splinecode" />
+                <Spline className='z-10 flex justify-center items-center' scene="https://prod.spline.design/8IMAkMiHzQqB3Htn/scene.splinecode" />
             </div>
         </>
     )

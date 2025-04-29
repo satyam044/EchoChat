@@ -17,16 +17,7 @@ body {
 }
 
 .robotSVG{animation: robotSVG 1s infinite ease-in;}
-.botMsg{animation:typing 4s ease-out;}
-
-@keyframes typing {
-    from {width: 0%;}
-}
-@keyframes robotSVG {
-    0% {filter: brightness(1);}
-    50% {filter: brightness(0.5);}
-    100% {filter: brightness(1);}
-}
+.botMsg{animation:typing 4s ease-in;}
 
 .slide{animation: 30s slide infinite linear;}
 .item1{animation-delay: calc(30s / 10 * (10 - 1) * -1);}
@@ -44,14 +35,22 @@ body {
     animation-play-state: paused;
 }
 
-@keyframes slide {
-    to{left:-100%;}
-}
-
 .botTalks{
     animation: 3s botTalks infinite ease-in;
 }
 
+
+@keyframes typing {
+    from {width: 0%;}
+}
+@keyframes robotSVG {
+    0% {filter: brightness(1);}
+    50% {filter: brightness(0.5);}
+    100% {filter: brightness(1);}
+}
+@keyframes slide {
+    to{left:-100%;}
+}
 @keyframes botTalks {
     0%{top:18%}
     50%{top:20%}
