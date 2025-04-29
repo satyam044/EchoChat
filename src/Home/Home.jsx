@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
         <div className='w-full h-[100dvh] flex relative'>
-            <h4 className='h-full w-full text-9xl z-0 text-[#ffffff0d] font-extrabold absolute flex justify-center items-center'>EchoChat</h4>
+            <h4 className='h-full w-full text-9xl z-0 border-l-[20px] border-r-[20px] border-black text-[#ffffff0d] font-extrabold absolute flex justify-center items-center'>EchoChat</h4>
             <HomeL/>
             <HomeR/>
             <div className='wrapper w-full z-50 p-6 flex whitespace-nowrap bg-linear-to-r from-[#0d1e2a] to-[#0095f0] absolute bottom-16 border-t-2 border-b-2 -rotate-2'>
