@@ -23,19 +23,11 @@ body {
 .robotSVG{animation: robotSVG 1s infinite ease-in;}
 .botMsg{animation:typing 4s steps(40, end);}
 
-.slide{animation: 30s slide infinite linear;}
-.item1{animation-delay: calc(30s / 10 * (10 - 1) * -1);}
-.item2{animation-delay: calc(30s / 10 * (10 - 2) * -1);}
-.item3{animation-delay: calc(30s / 10 * (10 - 3) * -1);}
-.item4{animation-delay: calc(30s / 10 * (10 - 4) * -1);}
-.item5{animation-delay: calc(30s / 10 * (10 - 5) * -1);}
-.item6{animation-delay: calc(30s / 10 * (10 - 6) * -1);}
-.item7{animation-delay: calc(30s / 10 * (10 - 7) * -1);}
-.item8{animation-delay: calc(30s / 10 * (10 - 8) * -1);}
-.item9{animation-delay: calc(30s / 10 * (10 - 9) * -1);}
-.item10{animation-delay: calc(30s / 10 * (10 - 10) * -1);}
+.animate-scroll {
+    animation: scroll 20s linear infinite;
+}
 
-.wrapper:hover .slide{
+.wrapper:hover .slider{
     animation-play-state: paused;
 }
 
@@ -53,11 +45,21 @@ body {
     50% {filter: brightness(0.5);}
     100% {filter: brightness(1);}
 }
-@keyframes slide {
-    to{left:-100%;}
-}
 @keyframes botTalks {
     0%{top:18%}
     50%{top:20%}
     100%{top:18%}
+}
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@media screen and (max-width:768px) {
+    nav{padding: 15px;}
+    .wrapper{display: none;}
+    .Home{flex-direction: column-reverse;}
+    .Home>h4{display: none;}
+    .homeL{width: 100%;padding:5rem 1rem;z-index: 100;}
+    .homeR{display: none;}
 }
