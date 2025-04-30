@@ -9,8 +9,8 @@ const HomeR = () => {
 
     const botTalks = [
         "Hey! Don't click! 😠",
-        "It hurts when you click 😢",
         "Do I look like a button to you? 🤨",
+        "It hurts when you click 😢",
         "Ouch! That tickles! 😳",
         "Stop poking my circuits! ⚡",
         "You're just doing this for fun, huh? 😏",

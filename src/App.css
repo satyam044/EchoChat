@@ -9,6 +9,10 @@ body {
     color: #fff;
 }
 
+.Home>h4{
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.235);
+}
+
 .homeL textarea{
     resize: none;
 }
@@ -17,7 +21,7 @@ body {
 }
 
 .robotSVG{animation: robotSVG 1s infinite ease-in;}
-.botMsg{animation:typing 4s ease-in;}
+.botMsg{animation:typing 4s steps(40, end);}
 
 .slide{animation: 30s slide infinite linear;}
 .item1{animation-delay: calc(30s / 10 * (10 - 1) * -1);}
@@ -41,8 +45,9 @@ body {
 
 
 @keyframes typing {
-    from {width: 0%;}
-}
+    from { width: 0 }
+    to { width: 100% }
+  }
 @keyframes robotSVG {
     0% {filter: brightness(1);}
     50% {filter: brightness(0.5);}
