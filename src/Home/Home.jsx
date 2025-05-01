@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import HomeL from './HomeL';
 import HomeR from './HomeR';
 import { FaGoogle, FaAmazon, FaWordpress, FaShopify } from "react-icons/fa";

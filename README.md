@@ -1,12 +1,24 @@
-# React + Vite
+EchoChat is a futuristic, interactive, and responsive website featuring a clean UI and a chatbot experience. It includes a 3D bot model (integrated using Spline) to make the interaction more immersive. Built with React.js and Tailwind CSS, EchoChat demonstrates a smooth and dynamic chatbot interface ready for further extension.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🗨️ Chat with Bot: Engage in dynamic conversations with a bot. (Currently uses a dummy script for collecting user input.)
 
-Currently, two official plugins are available:
+🤖 Interactive 3D Bot Model: Embedded via Spline for a more futuristic visual experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Responsive Design: Fully optimized for desktop, tablet, and mobile screens.
 
-## Expanding the ESLint configuration
+🎨 Clean and Modern UI: Designed with Tailwind CSS for a sleek, minimal look.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚙️ Dynamic Input Handling: User messages are captured and processed on the fly.
+
+🛠 Built With
+React.js — Frontend JavaScript library
+
+Tailwind CSS — Utility-first CSS framework
+
+Spline — 3D model embedding
+
+📄 License
+This project is open-source and free to use under the MIT License.
+
+Made with ❤️ using React, Tailwind CSS, and creativity.
